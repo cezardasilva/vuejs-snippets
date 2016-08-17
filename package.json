@@ -1,0 +1,12 @@
+{
+  "name": "vuejs-components",
+  "version": "0.0.1",
+  "description": "VueJS Components Snippets for Atom",
+  "keywords": [],
+  "repository": "https://github.com/cezardasilva/vuejs-snippets",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {}
+}
