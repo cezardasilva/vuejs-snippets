@@ -1,6 +1,8 @@
 # vuejs-snippets
 
 [![apm](https://img.shields.io/apm/dm/vuejs-snippets.svg)](https://atom.io/packages/vuejs-snippets)
+[![apm](https://img.shields.io/apm/l/vuejs-snippets.svg?maxAge=2592000)](https://atom.io/packages/vuejs-snippets)
+[![apm](https://img.shields.io/apm/v/vuejs-snippets.svg?maxAge=2592000)](https://atom.io/packages/vuejs-snippets)
 
 VueJS Components Snippets for Atom
 
