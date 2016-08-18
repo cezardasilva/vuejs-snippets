@@ -1,5 +1,7 @@
 # vuejs-snippets
 
+[![Node version](https://img.shields.io/node/v/vuejs-components.svg?style=flat)](http://nodejs.org/download/)
+
 VueJS Components Snippets for Atom
 
 ---
