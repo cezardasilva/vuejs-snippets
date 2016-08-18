@@ -1,6 +1,6 @@
 # vuejs-snippets
 
-[![apm](https://img.shields.io/apm/dm/vim-mode.svg)](https://atom.io/packages/vuejs-snippets)
+[![apm](https://img.shields.io/apm/dm/vuejs-snippets.svg)](https://atom.io/packages/vuejs-snippets)
 
 VueJS Components Snippets for Atom
 
