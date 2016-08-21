@@ -49,45 +49,46 @@ body:
   </script>
   ```
 
-### Vue Modal Component
+### Vue Validator
 
-  prefix: modal
+  prefix: validator
 
   body:
+    ```
+    Vue.validator("validatorName", function (val) {
+      return true
+    });
+    ```
 
-    <template>
-      <modal :show.sync="showModal">
-        <h2 slot="header">{{$t("change_password.title")}}</h2>
-        <div slot="body">
-          //You component contents goes here, only html.
-        </div>
-        <div slot="footer" class="text-center">
-        </div>
-      </modal>
-    </template>
+### Vue Validator Local
 
-    <script>
-    import Modal from './interface/Modal.vue'
+  prefix: validators
 
-    export default {
-      name: "ComponentName",
-      components: { Modal },
-      data(){
-        return {
-          //Component Data
-          showModal: false,
-        }
-      },
+  body:
+    ```
+    [..]
+    validators: {
+      nameOfValidator: function (val) {
+        return true
+      }
+    },
+    [...]
+    ```
 
-      created(){
-        //On Component created
-        this.showModal = true;
-      },
+### Vue Router map
 
-      methods: {
-        functionExample(){
-          //Basic Component method
+  prefix: map
+
+  body:
+    ```
+    router.map({
+      '/example': {
+        component: Example,
+        subRoutes:{
+          '/subrouter': {
+            component: SubRouter
+          }
         }
       }
-    }
-    </script>
+    })
+    ```
