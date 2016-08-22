@@ -1,12 +1,9 @@
-# vuejs-snippets
-
-[![apm](https://img.shields.io/apm/dm/vuejs-snippets.svg)](https://atom.io/packages/vuejs-snippets)
-[![apm](https://img.shields.io/apm/l/vuejs-snippets.svg?maxAge=2592000)](https://atom.io/packages/vuejs-snippets)
-[![apm](https://img.shields.io/apm/v/vuejs-snippets.svg?maxAge=2592000)](https://atom.io/packages/vuejs-snippets)
+# vuejs-snippets [![apm](https://img.shields.io/apm/dm/vuejs-snippets.svg)](https://atom.io/packages/vuejs-snippets) [![apm](https://img.shields.io/apm/l/vuejs-snippets.svg?)](https://atom.io/packages/vuejs-snippets) [![apm](https://img.shields.io/apm/v/vuejs-snippets.svg?)](https://atom.io/packages/vuejs-snippets)
+---
 
 VueJS Snippets for Atom
 
----
+
 
 ## Types
 
@@ -36,6 +33,9 @@ body:
         //Component Data
         example: true,
         foo: "bar"
+
+
+
       }
     },
 
@@ -58,7 +58,7 @@ body:
   prefix: validator
 
   body:
-  ```
+  ```javascript
   Vue.validator("validatorName", function (val) {
     return true
   });
@@ -70,7 +70,7 @@ body:
 
   body:
 
-  ```
+  ```javascript
   [..]
   validators: {
     nameOfValidator: function (val) {
@@ -88,7 +88,7 @@ body:
 
   body:
 
-  ```  
+  ```javascript
   router.map({
     '/example': {
       component: Example,
@@ -109,12 +109,12 @@ body:
 
   body:
 
-  ```  
-  CONTEXT.$http.get(URL).then((result) => {
+  ```javascript
+  this.$http.get(URL).then((result) => {
 
-		}, (error) => {
+	}, (error) => {
 
-		})
+	})
   })
   ```
 
@@ -124,8 +124,8 @@ body:
 
   body:
 
-  ```
-  CONTEXT.$http.post(URL, PARAMS).then((response) => {
+  ```javascript
+  this.$http.post(URL, PARAMS).then((response) => {
 
 	}, (error) => {
 
@@ -138,8 +138,8 @@ body:
 
   body:
 
-  ```
-  CONTEXT.$http.put(URL, PARAMS).then((response) => {
+  ```javascript
+  this.$http.put(URL, PARAMS).then((response) => {
 
 	}, (error) => {
 
@@ -152,8 +152,8 @@ body:
 
   body:
 
-  ```
-  CONTEXT.$http.delete(URL, PARAMS).then((response) => {
+  ```javascript
+  this.$http.delete(URL, PARAMS).then((response) => {
 
 	}, (error) => {
 
