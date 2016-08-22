@@ -4,15 +4,18 @@
 [![apm](https://img.shields.io/apm/l/vuejs-snippets.svg?maxAge=2592000)](https://atom.io/packages/vuejs-snippets)
 [![apm](https://img.shields.io/apm/v/vuejs-snippets.svg?maxAge=2592000)](https://atom.io/packages/vuejs-snippets)
 
-VueJS Components Snippets for Atom
+VueJS Snippets for Atom
 
 ---
 
 ## Types
 
 - .text.html.vue
+- .text.js
+
 
 ## Snippets
+
 
 ### Vue Component
 
@@ -49,46 +52,110 @@ body:
   </script>
   ```
 
-### Vue Validator
+## Vue Validator
 
+### Global
   prefix: validator
 
   body:
-    ```
-    Vue.validator("validatorName", function (val) {
-      return true
-    });
-    ```
+  ```
+  Vue.validator("validatorName", function (val) {
+    return true
+  });
+  ```
 
-### Vue Validator Local
+### Local
 
   prefix: validators
 
   body:
-    ```
-    [..]
-    validators: {
-      nameOfValidator: function (val) {
-        return true
-      }
-    },
-    [...]
-    ```
 
-### Vue Router map
+  ```
+  [..]
+  validators: {
+    nameOfValidator: function (val) {
+      return true
+    }
+  },
+  [...]
+  ```  
+
+## Vue Router
+
+### Map
 
   prefix: map
 
   body:
-    ```
-    router.map({
-      '/example': {
-        component: Example,
-        subRoutes:{
-          '/subrouter': {
-            component: SubRouter
-          }
+
+  ```  
+  router.map({
+    '/example': {
+      component: Example,
+      subRoutes:{
+        '/subrouter': {
+          component: SubRouter
         }
       }
-    })
-    ```
+    }
+  })
+  ```
+
+## Vue Resource
+
+### Get
+
+  prefix: get
+
+  body:
+
+  ```  
+  CONTEXT.$http.get(URL).then((result) => {
+
+		}, (error) => {
+
+		})
+  })
+  ```
+
+### Post
+
+  prefix: post
+
+  body:
+
+  ```
+  CONTEXT.$http.post(URL, PARAMS).then((response) => {
+
+	}, (error) => {
+
+	})
+  ```
+
+### Put
+
+  prefix: put
+
+  body:
+
+  ```
+  CONTEXT.$http.put(URL, PARAMS).then((response) => {
+
+	}, (error) => {
+
+	})
+  ```
+
+### Delete
+
+  prefix: delete
+
+  body:
+
+  ```
+  CONTEXT.$http.delete(URL, PARAMS).then((response) => {
+
+	}, (error) => {
+
+	})
+  ```

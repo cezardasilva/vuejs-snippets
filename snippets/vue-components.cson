@@ -64,3 +64,43 @@
     	}
     })
     """
+  'Vue HTTP Get':
+    'prefix': 'get'
+    'description': 'This snippet generates a Vue HTTP Get Request function'
+    'body': """
+    CONTEXT.$http.get(URL).then((result) => {
+
+  	}, (error) => {
+
+  	})
+    """
+  'Vue HTTP Post':
+    'prefix': 'post'
+    'description': 'This snippet generates a Vue HTTP Post Request function'
+    'body': """
+    CONTEXT.$http.post(URL, PARAMS).then((response) => {
+
+    }, (error) => {
+
+    })
+    """
+  'Vue HTTP Put':
+    'prefix': 'put'
+    'description': 'This snippet generates a Vue HTTP Put Request function'
+    'body': """
+    CONTEXT.$http.put(URL, PARAMS).then((response) => {
+
+		}, (error) => {
+
+		})
+    """
+  'Vue HTTP Delete':
+    'prefix': 'delete'
+    'description': 'This snippet generates a Vue HTTP Delete Request function'
+    'body': """
+    CONTEXT.$http.delete(URL, PARAMS).then((response) => {
+
+		}, (error) => {
+
+		})
+    """
