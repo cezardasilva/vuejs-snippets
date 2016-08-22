@@ -22,7 +22,7 @@ VueJS Snippets for Atom
 prefix: component
 
 body:
-  ```
+  ```Vue
   <template>
     //You component contents goes here, only html.
   </template>
