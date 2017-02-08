@@ -1,16 +1,16 @@
 '.text.html.vue, .js':
   'Vue Component':
-    'prefix': 'component'
+    'prefix': 'template'
     'description': 'This snippet generates the basic structure for a Vue JS Component'
     'body': """
-      <template>
-        //You component contents goes here
-      </template>
-
-      <script>
-
+    <template>
+      <div id='YourComponentName'>
+        <!--You component contents goes here-->
+      </div>
+    </template>
+    <script>
       export default {
-      	name: "ComponentName",
+      	name: "YourComponentName",
       	data(){
       		return {
       			//Component Data
@@ -29,39 +29,38 @@
       		}
       	}
       }
-      </script>
+    </script>
     """
-  'Vue Validator':
-    'prefix': 'validator'
-    'description': 'This snippet generates a validator function to Vue Validator'
-    'body': """
-    Vue.validator("validatorName", function (val) {
-    	return true
-    });
-    """
-  'Vue Validator Local':
-    'prefix': 'validators'
-    'description': 'This snippet generates a local validator function'
-    'body': """
-    validators: {
-      nameOfValidator: function (val) {
-        return true
-      }
-    };
-    """
-  'Vue Router Map':
-    'prefix': 'map'
+    'Vue Router':
+    'prefix': 'router'
     'description': 'This snippet generates a Vue Router map function'
     'body': """
-    router.map({
-    	'/example': {
-    		component: Example,
-    		subRoutes:{
-    			'/subrouter': {
-    				component: SubRouter
-    			}
-    		}
+    import Vue from 'vue'
+    import VueRouter from 'vue-router'
+
+    Vue.use(VueRouter)
+
+    const routes = [
+      {
+    		name: "YourRouteName",
+    		path: "/",
+    		component: YourComponent
     	}
+    ]
+
+    export const router = new VueRouter({
+    	routes: routes,
+    	scrollBehavior (to, from, savedPosition) {
+    		return { x: 0, y: 0 }
+    	}
+    })
+    """
+  'Vue Filter':
+    'prefix': 'filter'
+    'description': ''
+    'body': """
+    Vue.filter('yourfiltername', (value) => {
+    	return true
     })
     """
   'Vue HTTP Get':

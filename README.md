@@ -3,104 +3,82 @@
 
 VueJS Snippets for Atom
 
-
-
 ## Types
-
 - .text.html.vue
 - .text.js
 
-
 ## Snippets
 
-
 ### Vue Component
-
-prefix: component
-
+prefix: template
 body:
   ```Vue
   <template>
-    //You component contents goes here, only html.
+    <div id='YourComponentName'>
+      <!--You component contents goes here-->
+    </div>
   </template>
-
   <script>
+    export default {
+      name: "YourComponentName",
+      data(){
+        return {
+          //Component Data
+          example: true,
+          foo: "bar"
+        }
+      },
 
-  export default {
-    name: "ComponentName",
-    data(){
-      return {
-        //Component Data
-        example: true,
-        foo: "bar"
+      created(){
+        //On Component created
+      },
 
-
-
-      }
-    },
-
-    created(){
-      //On Component created
-    },
-
-    methods: {
-      functionExample(){
-        //Basic Component method
+      methods: {
+        functionExample(){
+          //Basic Component method
+        }
       }
     }
-  }
   </script>
   ```
 
-## Vue Validator
-
-### Global
-  prefix: validator
-
-  body:
-  ```javascript
-  Vue.validator("validatorName", function (val) {
-    return true
-  });
-  ```
-
-### Local
-
-  prefix: validators
-
-  body:
-
-  ```javascript
-  [..]
-  validators: {
-    nameOfValidator: function (val) {
-      return true
-    }
-  },
-  [...]
-  ```  
-
 ## Vue Router
 
-### Map
-
-  prefix: map
-
+### Router
+  prefix: router
   body:
-
   ```javascript
-  router.map({
-    '/example': {
-      component: Example,
-      subRoutes:{
-        '/subrouter': {
-          component: SubRouter
-        }
-      }
+  import Vue from 'vue'
+  import VueRouter from 'vue-router'
+
+  Vue.use(VueRouter)
+
+  const routes = [
+    {
+      name: "YourRouteName",
+      path: "/",
+      component: YourComponent
+    }
+  ]
+
+  export const router = new VueRouter({
+    routes: routes,
+    scrollBehavior (to, from, savedPosition) {
+      return { x: 0, y: 0 }
     }
   })
   ```
 
+## Vue filter
+
+### New Filter
+  prefix: filter
+  body:
+  ```javascript
+  Vue.filter('yourfiltername', (value) => {
+    return true
+  })
+  ```
 ## Vue Resource
 
 ### Get
