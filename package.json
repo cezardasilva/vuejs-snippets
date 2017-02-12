@@ -2,7 +2,7 @@
   "name": "vuejs-snippets",
   "version": "0.0.5",
   "description": "VueJS Components Snippets for Atom",
-  "keywords": [],
+  "keywords": ["vue", "vuejs", "snippet", "atom"],
   "repository": "https://github.com/cezardasilva/vuejs-snippets",
   "license": "MIT",
   "engines": {
