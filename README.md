@@ -1,7 +1,6 @@
-# vuejs-snippets [![apm](https://img.shields.io/apm/dm/vuejs-snippets.svg)](https://atom.io/packages/vuejs-snippets) [![apm](https://img.shields.io/apm/l/vuejs-snippets.svg?)](https://atom.io/packages/vuejs-snippets) [![apm](https://img.shields.io/apm/v/vuejs-snippets.svg?)](https://atom.io/packages/vuejs-snippets) [![GitHub stars](https://img.shields.io/github/stars/badges/vuejs-snippets.svg?style=social&label=Star)](https://github.com/cezardasilva/vuejs-snippets)
----
+# Vue.js Snippets [![apm](https://img.shields.io/apm/dm/vuejs-snippets.svg)](https://atom.io/packages/vuejs-snippets) [![apm](https://img.shields.io/apm/l/vuejs-snippets.svg?)](https://atom.io/packages/vuejs-snippets) [![apm](https://img.shields.io/apm/v/vuejs-snippets.svg?)](https://atom.io/packages/vuejs-snippets)
 
-VueJS Snippets for Atom
+Vue.js Snippets for Atom
 
 ## Types
 - .text.html.vue
