@@ -1,6 +1,6 @@
 {
   "name": "vuejs-snippets",
-  "version": "0.0.51",
+  "version": "0.1.0",
   "description": "VueJS Components Snippets for Atom",
   "keywords": [
     "vue",
